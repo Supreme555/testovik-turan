@@ -665,7 +665,7 @@ p {
   }
 
   .stat-item.correct {
-    background: rgba(39, 174, 96, 0.2);
+    background: rgba(46, 204, 113, 0.2);
     color: #2ecc71;
   }
 
@@ -886,4 +886,211 @@ p {
   .stat-label {
     font-size: 0.7rem;
   }
+}
+
+/* Добавляем CSS-пе��еменные для тем */
+:root[data-theme="light"] {
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --primary-color: #3498db;
+  --secondary-color: #2980b9;
+  --container-bg: white;
+  --border-color: #ddd;
+  --hover-bg: #f0f0f0;
+  --correct-color: #27ae60;
+  --incorrect-color: #e74c3c;
+  --selected-color: blueviolet;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --heading-color: #2c3e50;
+  --nav-bg: white;
+  --nav-button-bg: #f0f0f0;
+  --nav-button-color: #333;
+  --nav-button-hover: #e0e0e0;
+  --nav-button-active-bg: #3498db;
+  --nav-button-active-color: white;
+  --input-bg: white;
+  --input-border: #ddd;
+  --stats-bg: #f8f9fa;
+  --stats-text: #666;
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #3498db;
+  --secondary-color: #2980b9;
+  --container-bg: #1e1e1e;
+  --border-color: #404040;
+  --hover-bg: #2d2d2d;
+  --correct-color: #2ecc71;
+  --incorrect-color: #e74c3c;
+  --selected-color: #9370db;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --heading-color: #e0e0e0;
+  --nav-bg: #1e1e1e;
+  --nav-button-bg: #2d2d2d;
+  --nav-button-color: #e0e0e0;
+  --nav-button-hover: #3d3d3d;
+  --nav-button-active-bg: #3498db;
+  --nav-button-active-color: white;
+  --input-bg: #2d2d2d;
+  --input-border: #404040;
+  --stats-bg: #2d2d2d;
+  --stats-text: #b0b0b0;
+}
+
+/* Обновляем основные стили */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  background-color: var(--container-bg);
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+/* Навигация */
+.navigation {
+  background: var(--nav-bg);
+  border: 1px solid var(--border-color);
+}
+
+.nav-button {
+  background: var(--nav-button-bg);
+  color: var(--nav-button-color);
+  border-color: var(--border-color);
+}
+
+.nav-button:hover:not(:disabled) {
+  background: var(--nav-button-hover);
+}
+
+.nav-button.active {
+  background: var(--nav-button-active-bg);
+  color: var(--nav-button-active-color);
+}
+
+/* Вопросы и ответы */
+.question-text {
+  color: var(--text-color);
+}
+
+.answer-button {
+  background: var(--container-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.answer-button:hover:not(:disabled) {
+  background: var(--hover-bg);
+}
+
+/* Результаты */
+.results-container {
+  background: var(--container-bg);
+}
+
+.result-item {
+  background: var(--container-bg);
+  border-color: var(--border-color);
+}
+
+/* Статистика */
+.results-summary {
+  background: var(--container-bg);
+}
+
+.results-summary h2 {
+  color: var(--heading-color);
+}
+
+.stat-item {
+  background: var(--stats-bg);
+}
+
+.stat-value {
+  color: var(--heading-color);
+}
+
+.stat-label {
+  color: var(--stats-text);
+}
+
+/* Поиск */
+.search-container {
+  background: var(--container-bg);
+}
+
+.search-input {
+  background: var(--input-bg);
+  color: var(--text-color);
+  border-color: var(--input-border);
+}
+
+.search-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Переключатель темы */
+.theme-toggle {
+  padding: 5px;
+  background: var(--container-bg);
+  border-color: var(--border-color);
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.theme-toggle:hover {
+  background: var(--hover-bg);
+}
+
+/* Дополнительные стили для темной темы */
+:root[data-theme="dark"] {
+  /* Улучшенные стили для корректных/некорректных ответов */
+  .correct-answer {
+    background-color: rgba(46, 204, 113, 0.15);
+  }
+
+  .incorrect-answer {
+    background-color: rgba(231, 76, 60, 0.15);
+  }
+
+  /* Улучшенные стили для статистики */
+  .stat-item.correct {
+    background: rgba(46, 204, 113, 0.15);
+  }
+
+  .stat-item.incorrect {
+    background: rgba(231, 76, 60, 0.15);
+  }
+
+  .stat-item.score {
+    background: rgba(52, 152, 219, 0.15);
+  }
+
+  /* Улучшенные стили для кнопок */
+  .answer-button:disabled {
+    opacity: 0.8;
+  }
+
+  /* Улучшенные стили для форм */
+  form {
+    background: var(--container-bg);
+  }
+
+  /* Улучшенные стили для разделителей */
+  .result-item,
+  .question-container {
+    border-color: var(--border-color);
+  }
+}
+
+/* Анимации для переключения тем */
+* {
+  transition: background-color 0.3s ease,
+              color 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
 }

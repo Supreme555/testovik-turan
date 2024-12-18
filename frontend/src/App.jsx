@@ -1,11 +1,30 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import questionsData from '../../ques.json';
 import QuestionsList from './components/QuestionsList';
+import ThemeToggle from './components/ThemeToggle';
 
 const App = () => {
   const [userAnswers, setUserAnswers] = useState({});
   const [showResults, setShowResults] = useState(false);
   const [showAllQuestions, setShowAllQuestions] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(() => {
+    // Проверяем сохраненную тему или системные настройки
+    const saved = localStorage.getItem('theme');
+    if (saved) {
+      return saved === 'dark';
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
+
+  // Применяем тему
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', isDarkTheme ? 'dark' : 'light');
+    localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+  }, [isDarkTheme]);
+
+  const toggleTheme = () => {
+    setIsDarkTheme(prev => !prev);
+  };
 
   const shuffleArray = (array) => {
     const shuffled = [...array];
@@ -65,6 +84,7 @@ const App = () => {
 
   const renderNavigation = () => (
     <div className="navigation">
+      <ThemeToggle isDark={isDarkTheme} onToggle={toggleTheme} />
       <button 
         className={`nav-button ${!showAllQuestions && !showResults ? 'active' : ''}`}
         onClick={() => {
