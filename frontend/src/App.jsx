@@ -112,10 +112,42 @@ const App = () => {
   }
 
   if (showResults) {
+    const totalQuestions = questions.length;
+    const answeredQuestions = Object.keys(userAnswers).length;
+    const correctAnswers = Object.values(userAnswers).filter(answer => answer.isCorrect).length;
+    const incorrectAnswers = answeredQuestions - correctAnswers;
+    const score = Math.round((correctAnswers / totalQuestions) * 100);
+
     return (
       <div className="container">
         {renderNavigation()}
         <div className="results-container">
+          <div className="results-summary">
+            <h2>Результаты теста</h2>
+            <div className="stats-grid">
+              <div className="stat-item">
+                <div className="stat-value">{totalQuestions}</div>
+                <div className="stat-label">Всего вопросов</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-value">{answeredQuestions}</div>
+                <div className="stat-label">Отвечено</div>
+              </div>
+              <div className="stat-item correct">
+                <div className="stat-value">{correctAnswers}</div>
+                <div className="stat-label">Правильно</div>
+              </div>
+              <div className="stat-item incorrect">
+                <div className="stat-value">{incorrectAnswers}</div>
+                <div className="stat-label">Неправильно</div>
+              </div>
+              <div className="stat-item score">
+                <div className="stat-value">{score}%</div>
+                <div className="stat-label">Результат</div>
+              </div>
+            </div>
+          </div>
+
           {questions.map((question, index) => (
             <div key={index} className="result-item">
               <p className="question-text">

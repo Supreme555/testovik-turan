@@ -110,7 +110,7 @@
             "answers": [
                 {
                     "text": "СУБД",
-                    "correct": false
+                    "correct": true
                 },
                 {
                     "text": "БнД",
@@ -118,7 +118,7 @@
                 },
                 {
                     "text": "БД",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "text": "ЭС",
@@ -188,7 +188,7 @@
             "answers": [
                 {
                     "text": "0 и более",
-                    "correct": false
+                    "correct": true
                 },
                 {
                     "text": "0",
@@ -196,7 +196,7 @@
                 },
                 {
                     "text": "1",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "text": "1 и более",
@@ -299,7 +299,7 @@
                     "correct": false
                 },
                 {
-                    "text": "insert into publisher (name) values ('O’,’ Reilly')",
+                    "text": "insert into publisher (name) values ('OReilly')",
                     "correct": false
                 },
                 {
