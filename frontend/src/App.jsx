@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import questionsData from '../../ques.json';
+import QuestionsList from './components/QuestionsList';
 
 const App = () => {
   const [userAnswers, setUserAnswers] = useState({});
   const [showResults, setShowResults] = useState(false);
+  const [showAllQuestions, setShowAllQuestions] = useState(false);
 
   const questions = React.useMemo(() => {
     if (questionsData && Array.isArray(questionsData.questions)) {
@@ -21,11 +23,9 @@ const App = () => {
     setUserAnswers((prev) => {
       const newAnswers = { ...prev };
       
-      // Если ответ уже выбран - отменяем его
       if (newAnswers[questionIndex]?.selectedAnswerIndex === answerIndex) {
         delete newAnswers[questionIndex];
       } else {
-        // Иначе записываем новый ответ
         newAnswers[questionIndex] = {
           question: questions[questionIndex].question,
           answers: questions[questionIndex].answers,
@@ -44,9 +44,64 @@ const App = () => {
     setShowResults(true);
   };
 
+  const handleReset = () => {
+    setUserAnswers({});
+    setShowResults(false);
+    setShowAllQuestions(false);
+  };
+
+  const renderNavigation = () => (
+    <div className="navigation">
+      <button 
+        className={`nav-button ${!showAllQuestions && !showResults ? 'active' : ''}`}
+        onClick={() => {
+          setShowAllQuestions(false);
+          setShowResults(false);
+        }}
+      >
+        Тест
+      </button>
+      <button 
+        className={`nav-button ${showResults ? 'active' : ''}`}
+        onClick={() => {
+          setShowResults(true);
+          setShowAllQuestions(false);
+        }}
+        disabled={!Object.keys(userAnswers).length}
+      >
+        Результаты
+      </button>
+      <button 
+        className={`nav-button ${showAllQuestions ? 'active' : ''}`}
+        onClick={() => {
+          setShowAllQuestions(true);
+          setShowResults(false);
+        }}
+      >
+        Все вопросы
+      </button>
+      <button 
+        className="nav-button"
+        onClick={handleReset}
+      >
+        Начать заново
+      </button>
+    </div>
+  );
+
+  if (showAllQuestions) {
+    return (
+      <div className="container">
+        {renderNavigation()}
+        <QuestionsList />
+      </div>
+    );
+  }
+
   if (showResults) {
     return (
       <div className="container">
+        {renderNavigation()}
         <div className="results-container">
           {questions.map((question, index) => (
             <div key={index} className="result-item">
@@ -85,6 +140,7 @@ const App = () => {
 
   return (
     <div className="container">
+      {renderNavigation()}
       <form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
         {questions.map((question, questionIndex) => (
           <div key={questionIndex} className="question-container">
