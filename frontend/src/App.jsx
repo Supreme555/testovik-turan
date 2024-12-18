@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import questionsData from '../../ques.json';
 import QuestionsList from './components/QuestionsList';
 
@@ -7,10 +7,23 @@ const App = () => {
   const [showResults, setShowResults] = useState(false);
   const [showAllQuestions, setShowAllQuestions] = useState(false);
 
-  const questions = React.useMemo(() => {
+  const shuffleArray = (array) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+
+  const questions = useMemo(() => {
     if (questionsData && Array.isArray(questionsData.questions)) {
-      const shuffled = [...questionsData.questions].sort(() => Math.random() - 0.5);
-      return shuffled.slice(0, 25);
+      const shuffledQuestions = shuffleArray(questionsData.questions);
+      
+      return shuffledQuestions.slice(0, 25).map(question => ({
+        ...question,
+        answers: shuffleArray(question.answers)
+      }));
     }
     return [];
   }, []);

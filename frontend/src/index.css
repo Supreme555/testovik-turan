@@ -14,7 +14,6 @@ body {
 .container {
   max-width: 800px;
   margin: 20px auto;
-  padding: 0 15px;
   width: 100%;
 }
 
@@ -227,7 +226,7 @@ p {
 /* Адаптивные стили для разных размеров экрана */
 @media (max-width: 768px) {
   .container {
-    margin: 10px auto;
+    margin: 10px 0px;
   }
 
   .results-container,
@@ -416,5 +415,148 @@ p {
   .answer-button.selected,
   .nav-button.active {
     border: 2px solid highlight;
+  }
+}
+
+/* Добавьте эти стили к существующему файлу */
+
+.search-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.search-info {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.no-results {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Обновляем стили для темной темы */
+@media (prefers-color-scheme: dark) {
+  .search-container {
+    background: #2d2d2d;
+  }
+
+  .search-input {
+    background: #3d3d3d;
+    border-color: #4d4d4d;
+    color: #e0e0e0;
+  }
+
+  .search-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+
+  .search-info {
+    color: #999;
+  }
+
+  .no-results {
+    color: #999;
+  }
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+  .search-container {
+    padding: 10px;
+  }
+
+  .search-input {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+  }
+
+  .search-info {
+    font-size: 0.8rem;
+  }
+
+  .no-results {
+    padding: 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Добавьте эти стили к существующим стилям поиска */
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.clear-search {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.clear-search:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/* Обновляем стиль input для учета кнопки очистки */
+.search-input {
+  padding-right: 40px;
+}
+
+/* Стили для темной темы */
+@media (prefers-color-scheme: dark) {
+  .clear-search {
+    color: #999;
+  }
+
+  .clear-search:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .clear-search {
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
   }
 }
