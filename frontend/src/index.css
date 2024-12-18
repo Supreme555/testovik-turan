@@ -15,6 +15,8 @@ body {
   max-width: 800px;
   margin: 20px auto;
   width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -226,7 +228,8 @@ p {
 /* Адаптивные стили для разных размеров экрана */
 @media (max-width: 768px) {
   .container {
-    margin: 10px 0px;
+    margin: 10px 0;
+    padding: 0 10px;
   }
 
   .results-container,
@@ -235,20 +238,28 @@ p {
   }
 
   .question-container {
-    padding: 10px;
+    padding: 12px 8px;
+    margin-bottom: 15px;
   }
 
   .result-item {
-    padding: 15px;
+    padding: 15px 10px;
+    margin-bottom: 12px;
   }
 
   .question-text {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
   }
 
   .answer-button {
-    padding: 10px;
-    font-size: 0.9rem;
+    padding: 12px 10px;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    white-space: normal;
+    height: auto;
+    text-align: left;
   }
 
   button[type="submit"] {
@@ -655,10 +666,12 @@ p {
 
   .stat-item.correct {
     background: rgba(39, 174, 96, 0.2);
+    color: #2ecc71;
   }
 
   .stat-item.incorrect {
     background: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
   }
 
   .stat-item.score {
@@ -692,5 +705,185 @@ p {
 
   .stat-item.score {
     grid-column: auto;
+  }
+}
+
+/* Обновляем базовые стили для лучшей адаптивности */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Улучшаем навигацию для мобильных устройств */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+
+  .navigation {
+    padding: 8px;
+    gap: 6px;
+  }
+
+  .nav-button {
+    padding: 10px;
+    font-size: 0.85rem;
+    min-width: unset;
+    flex: 1;
+  }
+
+  /* Улучшаем отображение вопросов */
+  .question-container {
+    padding: 12px 8px;
+    margin-bottom: 15px;
+  }
+
+  .question-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+
+  /* Улучшаем отображение ответов */
+  .answer-button {
+    padding: 12px 10px;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    white-space: normal;
+    height: auto;
+    text-align: left;
+  }
+
+  /* Улучшаем отображение результатов */
+  .results-container {
+    padding: 12px 8px;
+  }
+
+  .result-item {
+    padding: 15px 10px;
+    margin-bottom: 12px;
+  }
+
+  /* Улучшаем статистику */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .stat-item {
+    padding: 12px 8px;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  /* Улучшаем поиск */
+  .search-container {
+    padding: 12px 8px;
+  }
+
+  .search-input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .search-info {
+    font-size: 0.8rem;
+    margin-top: 8px;
+  }
+}
+
+/* Дополнительные оптимизации для очень маленьких экранов */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 8px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .nav-button {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .question-text {
+    font-size: 0.85rem;
+  }
+
+  .answer-button {
+    padding: 10px 8px;
+    font-size: 0.8rem;
+  }
+
+  /* Статистика в одну колонку */
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  /* Уменьшаем отступы в результатах */
+  .result-item {
+    padding: 12px 8px;
+    margin-bottom: 10px;
+  }
+
+  /* Оптимизируем кнопку отправки */
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 20px 0;
+  }
+}
+
+/* Добавляем поддержку ландшафтной ориентации */
+@media (max-height: 600px) and (orientation: landscape) {
+  .container {
+    margin: 5px 0;
+  }
+
+  .question-container {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .answer-button {
+    padding: 8px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Улучшаем читаемость на маленьких экранах */
+@media (max-width: 320px) {
+  .question-text {
+    font-size: 0.8rem;
+  }
+
+  .answer-button {
+    font-size: 0.75rem;
+    padding: 8px 6px;
+  }
+
+  .stat-value {
+    font-size: 1.2rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
   }
 }
