@@ -55,25 +55,24 @@ const App = () => {
               </p>
               <ol>
                 {question.answers.map((ans, ansIndex) => (
-                  <li 
-                    key={ansIndex} 
-                    style={{ 
-                      color: ans.correct ? '#27ae60' : 'inherit',
-                      fontWeight: userAnswers[index]?.selectedAnswerIndex === ansIndex ? 'bold' : 'normal'
-                    }}
-                  >
-                    {ans.text}
+                  <li key={ansIndex}>
+                    <button
+                      className={`answer-button 
+                        ${ans.correct ? 'correct' : ''} 
+                        ${userAnswers[index]?.selectedAnswerIndex === ansIndex ? 'selected' : ''}
+                        ${!ans.correct && userAnswers[index]?.selectedAnswerIndex === ansIndex ? 'incorrect' : ''}
+                      `}
+                      disabled
+                    >
+                      {ans.text}
+                    </button>
                   </li>
                 ))}
               </ol>
               {userAnswers[index] ? (
-                <>
-                  <p><strong>Ваш ответ:</strong> {userAnswers[index].userAnswer}</p>
-                  <p><strong>Правильный ответ:</strong> {userAnswers[index].correctAnswer}</p>
-                  <p className={userAnswers[index].isCorrect ? 'correct-answer' : 'incorrect-answer'}>
-                    {userAnswers[index].isCorrect ? 'Верно' : 'Неверно'}
-                  </p>
-                </>
+                <p className={userAnswers[index].isCorrect ? 'correct-answer' : 'incorrect-answer'}>
+                  {userAnswers[index].isCorrect ? 'Верно' : 'Неверно'}
+                </p>
               ) : (
                 <p className="incorrect-answer">Ответ не выбран</p>
               )}
