@@ -140,8 +140,8 @@ button[type="submit"]:hover {
 }
 
 .answer-button.selected:not(.correct) {
-  background-color: #e74c3c;
-  border-color: #c0392b;
+  background-color: blueviolet;
+  border-color: blueviolet;
 }
 
 .answer-button.correct {
