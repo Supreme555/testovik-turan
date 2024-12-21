@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import questionsData from '../../ques.json';
+import questionsData from '../../test/ques_KZ.json';
 import QuestionsList from './components/QuestionsList';
 import ThemeToggle from './components/ThemeToggle';
 
