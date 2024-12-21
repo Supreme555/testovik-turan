@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import questionsData from '../../../ques.json';
+import questionsData from '../../../test/ques_KZ.json';
 
 const QuestionsList = () => {
   const [searchQuery, setSearchQuery] = useState('');
