@@ -34,7 +34,7 @@ const QuestionsList = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="search-input"
           />
-          {searchQuery && (
+          {/* {searchQuery && ( */}
             <button 
               className="clear-search"
               onClick={handleClearSearch}
@@ -42,7 +42,7 @@ const QuestionsList = () => {
             >
               ×
             </button>
-          )}
+          {/* )} */}
         </div>
         <div className="search-info">
           Найдено вопросов: {filteredQuestions.length}
