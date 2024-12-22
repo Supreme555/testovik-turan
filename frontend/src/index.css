@@ -531,7 +531,7 @@ p {
   font-size: 24px;
   color: #666;
   cursor: pointer;
-  padding: 0 8px;
+  padding: 0 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1088,9 +1088,9 @@ body {
 }
 
 /* Анимации для переключения тем */
-/* * {
+* {
   transition: background-color 0.3s ease,
               color 0.3s ease,
               border-color 0.3s ease,
               box-shadow 0.3s ease;
-} */
+}

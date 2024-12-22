@@ -40,7 +40,7 @@ const QuestionsList = () => {
               onClick={handleClearSearch}
               aria-label="Очистить поиск"
             >
-              ×
+              X
             </button>
           {/* )} */}
         </div>
