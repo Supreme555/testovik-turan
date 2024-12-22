@@ -538,7 +538,7 @@ p {
   height: 24px;
   width: 24px;
   border-radius: 50%;
-  transition: all 0.2s ease;
+  /* transition: all 0.2s ease; */
 }
 
 .clear-search:hover {
