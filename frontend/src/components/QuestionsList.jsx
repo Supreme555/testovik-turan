@@ -1,26 +1,81 @@
 import React, { useState, useMemo } from 'react';
-import questionsData from '../../../test/ques_KZ.json';
+import questionsHS from '../../../test/ques_HS.json';
+import questionsBD from '../../../test/ques_BD.json';
+import questionsKZ from '../../../test/ques_KZ.json';
 
-const QuestionsList = () => {
+const QuestionsList = ({ selectedTest = 'HS' }) => {
   const [searchQuery, setSearchQuery] = useState('');
+
+  const availableTests = {
+    HS: questionsHS,
+    BD: questionsBD,
+    KZ: questionsKZ
+  };
+
+  const currentTestData = availableTests[selectedTest];
+  const questions = currentTestData.questions_and_answers || currentTestData.questions;
 
   const filteredQuestions = useMemo(() => {
     const query = searchQuery.toLowerCase().trim();
-    if (!query) return questionsData.questions;
+    if (!query) return questions;
 
-    return questionsData.questions.filter(question => {
+    return questions.filter(question => {
       const questionMatch = question.question.toLowerCase().includes(query);
-      const answersMatch = question.answers.some(answer => 
+      
+      // Для режима изучения (История Казахстана)
+      if (question.answer) {
+        const answerText = Object.values(question.answer).join(' ').toLowerCase();
+        return questionMatch || answerText.includes(query);
+      }
+      
+      // Для режима тестирования
+      const answersMatch = question.answers?.some(answer => 
         answer.text.toLowerCase().includes(query)
       );
-      const numberMatch = question.number.toString().includes(query);
-
-      return questionMatch || answersMatch || numberMatch;
+      return questionMatch || answersMatch;
     });
-  }, [searchQuery]);
+  }, [searchQuery, questions]);
 
-  const handleClearSearch = () => {
-    setSearchQuery('');
+  const renderQuestion = (question) => {
+    // Для режима изучения (История Казахстана)
+    if (question.answer) {
+      return (
+        <div className="result-item study-mode">
+          <p className="question-text">
+            <strong>Вопрос {question.number}:</strong> {question.question}
+          </p>
+          <div className="answer-content">
+            {Object.entries(question.answer).map(([title, content], i) => (
+              <div key={i} className="answer-section">
+                <h4>{title}</h4>
+                <p>{content}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    // Для режима тестирования
+    return (
+      <div className="result-item test-mode">
+        <p className="question-text">
+          <strong>Вопрос {question.number}:</strong> {question.question}
+        </p>
+        <ol>
+          {question.answers.map((answer, ansIndex) => (
+            <li key={ansIndex}>
+              <button
+                className={`answer-button ${answer.correct ? 'correct' : ''}`}
+                disabled
+              >
+                {answer.text}
+              </button>
+            </li>
+          ))}
+        </ol>
+      </div>
+    );
   };
 
   return (
@@ -34,15 +89,13 @@ const QuestionsList = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="search-input"
           />
-          {/* {searchQuery && ( */}
-            <button 
-              className="clear-search"
-              onClick={handleClearSearch}
-              aria-label="Очистить поиск"
-            >
-              X
-            </button>
-          {/* )} */}
+          <button 
+            className="clear-search"
+            onClick={() => setSearchQuery('')}
+            aria-label="Очистить поиск"
+          >
+            ✕
+          </button>
         </div>
         <div className="search-info">
           Найдено вопросов: {filteredQuestions.length}
@@ -50,22 +103,8 @@ const QuestionsList = () => {
       </div>
       <div className="results-container">
         {filteredQuestions.map((question, index) => (
-          <div key={index} className="result-item">
-            <p className="question-text">
-              <strong>Вопрос {question.number}:</strong> {question.question}
-            </p>
-            <ol>
-              {question.answers.map((answer, ansIndex) => (
-                <li key={ansIndex}>
-                  <button
-                    className={`answer-button ${answer.correct ? 'correct' : ''}`}
-                    disabled
-                  >
-                    {answer.text}
-                  </button>
-                </li>
-              ))}
-            </ol>
+          <div key={index}>
+            {renderQuestion(question)}
           </div>
         ))}
         {filteredQuestions.length === 0 && (

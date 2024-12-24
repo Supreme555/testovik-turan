@@ -30,7 +30,6 @@
   padding: 5px;
   background: var(--container-bg);
   border: 1px solid var(--border-color);
-  border-radius: 50%;
   cursor: pointer;
   font-size: 1.2rem;
   transition: all 0.3s ease;
@@ -52,7 +51,7 @@
   text-align: center;
 }
 
-/* Кнопки */
+/* Кноп��и */
 .nav-button:hover:not(:disabled) {
   background: var(--nav-button-hover);
 }
@@ -139,4 +138,74 @@
 
 .stat-item.score {
   background: rgba(52, 152, 219, 0.15);
+}
+
+/* Выбор теста */
+.test-selection {
+  padding: 20px;
+  text-align: center;
+}
+
+.test-selection h2 {
+  margin-bottom: 30px;
+  color: var(--heading-color);
+}
+
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.test-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: var(--container-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.test-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.test-button.study-mode {
+  border-color: var(--primary-color);
+}
+
+.test-button.test-mode {
+  border-color: var(--secondary-color);
+}
+
+.test-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.test-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.test-type {
+  font-size: 0.9rem;
+  color: var(--stats-text);
+  margin-bottom: 5px;
+}
+
+.question-count {
+  font-size: 0.8rem;
+  color: var(--stats-text);
+  background: var(--stats-bg);
+  padding: 4px 8px;
+  border-radius: 12px;
 } 

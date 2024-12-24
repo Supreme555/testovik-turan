@@ -1,20 +1,41 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import questionsData from '../../test/ques_KZ.json';
+import questionsHS from '../../test/ques_HS.json';
+import questionsBD from '../../test/ques_BD.json';
+import questionsKZ from '../../test/ques_KZ.json';
 import QuestionsList from './components/QuestionsList';
 import ThemeToggle from './components/ThemeToggle';
 
 const App = () => {
+  const [selectedTest, setSelectedTest] = useState(null);
   const [userAnswers, setUserAnswers] = useState({});
   const [showResults, setShowResults] = useState(false);
   const [showAllQuestions, setShowAllQuestions] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(() => {
-    // Проверяем сохраненную тему или системные настройки
     const saved = localStorage.getItem('theme');
-    if (saved) {
-      return saved === 'dark';
-    }
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
+
+  // Объект с доступными тестами
+  const availableTests = {
+    HS: { 
+      name: 'История Казахстана', 
+      data: questionsHS, 
+      isStudyMode: true,
+      icon: '📚'
+    },
+    BD: { 
+      name: 'База данных', 
+      data: questionsBD, 
+      isStudyMode: false,
+      icon: '💾'
+    },
+    KZ: { 
+      name: 'Казахский язык', 
+      data: questionsKZ, 
+      isStudyMode: false,
+      icon: '🗣️'
+    }
+  };
 
   // Применяем тему
   useEffect(() => {
@@ -36,8 +57,8 @@ const App = () => {
   };
 
   const questions = useMemo(() => {
-    if (questionsData && Array.isArray(questionsData.questions)) {
-      const shuffledQuestions = shuffleArray(questionsData.questions);
+    if (selectedTest && availableTests[selectedTest].data && Array.isArray(availableTests[selectedTest].data.questions)) {
+      const shuffledQuestions = shuffleArray(availableTests[selectedTest].data.questions);
       
       return shuffledQuestions.slice(0, 25).map(question => ({
         ...question,
@@ -45,7 +66,7 @@ const App = () => {
       }));
     }
     return [];
-  }, []);
+  }, [selectedTest]);
 
   const handleAnswer = (questionIndex, answerIndex) => {
     if (!questions[questionIndex] || !questions[questionIndex].answers[answerIndex]) {
@@ -82,51 +103,90 @@ const App = () => {
     setShowAllQuestions(false);
   };
 
-  const renderNavigation = () => (
-    <div className="navigation">
-      <ThemeToggle isDark={isDarkTheme} onToggle={toggleTheme} />
-      <button 
-        className={`nav-button ${!showAllQuestions && !showResults ? 'active' : ''}`}
-        onClick={() => {
-          setShowAllQuestions(false);
-          setShowResults(false);
-        }}
-      >
-        Тест
-      </button>
-      <button 
-        className={`nav-button ${showResults ? 'active' : ''}`}
-        onClick={() => {
-          setShowResults(true);
-          setShowAllQuestions(false);
-        }}
-        disabled={!Object.keys(userAnswers).length}
-      >
-        Результаты
-      </button>
-      <button 
-        className={`nav-button ${showAllQuestions ? 'active' : ''}`}
-        onClick={() => {
-          setShowAllQuestions(true);
-          setShowResults(false);
-        }}
-      >
-        Все вопросы
-      </button>
-      <button 
-        className="nav-button"
-        onClick={handleReset}
-      >
-        Начать заново
-      </button>
-    </div>
-  );
+  const renderNavigation = () => {
+    const isStudyMode = availableTests[selectedTest]?.isStudyMode;
 
-  if (showAllQuestions) {
+    return (
+      <div className="navigation">
+        <ThemeToggle isDark={isDarkTheme} onToggle={toggleTheme} />
+        {!isStudyMode && (
+          <>
+            <button 
+              className={`nav-button ${!showAllQuestions && !showResults ? 'active' : ''}`}
+              onClick={() => {
+                setShowAllQuestions(false);
+                setShowResults(false);
+              }}
+            >
+              Тест
+            </button>
+            <button 
+              className={`nav-button ${showResults ? 'active' : ''}`}
+              onClick={() => {
+                setShowResults(true);
+                setShowAllQuestions(false);
+              }}
+              disabled={!Object.keys(userAnswers).length}
+            >
+              Результаты
+            </button>
+          </>
+        )}
+        <button 
+          className={`nav-button ${showAllQuestions ? 'active' : ''}`}
+          onClick={() => {
+            setShowAllQuestions(true);
+            setShowResults(false);
+          }}
+        >
+          Все вопросы
+        </button>
+        {!isStudyMode && (
+          <button 
+            className="nav-button"
+            onClick={handleReset}
+          >
+            Начать заново
+          </button>
+        )}
+      </div>
+    );
+  };
+
+  if (!selectedTest) {
+    return (
+      <div className="container">
+        <ThemeToggle isDark={isDarkTheme} onToggle={() => setIsDarkTheme(prev => !prev)} />
+        <div className="test-selection">
+          <h2>Выберите тест</h2>
+          <div className="test-grid">
+            {Object.entries(availableTests).map(([key, test]) => (
+              <button
+                key={key}
+                className={`test-button ${test.isStudyMode ? 'study-mode' : 'test-mode'}`}
+                onClick={() => setSelectedTest(key)}
+              >
+                <span className="test-icon">{test.icon}</span>
+                <span className="test-name">{test.name}</span>
+                <span className="test-type">
+                  {test.isStudyMode ? 'Режим изучения' : 'Режим теста'}
+                </span>
+                <span className="question-count">
+                  {test.data.questions_and_answers?.length || test.data.questions?.length} вопросов
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (showAllQuestions || availableTests[selectedTest]?.isStudyMode) {
     return (
       <div className="container">
         {renderNavigation()}
-        <QuestionsList />
+        <QuestionsList selectedTest={selectedTest} />
       </div>
     );
   }
