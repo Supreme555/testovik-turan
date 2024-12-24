@@ -1,0 +1,142 @@
+/* Кнопки */
+.nav-button {
+  padding: 8px 12px;
+  min-width: 120px;
+  background: var(--nav-button-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--nav-button-color);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.answer-button {
+  width: 100%;
+  padding: 8px 12px;
+  background: var(--container-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: all 0.2s ease;
+}
+
+/* Переключатель темы */
+.theme-toggle {
+  padding: 5px;
+  background: var(--container-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+/* Поиск */
+.search-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: var(--container-bg);
+  border-radius: 8px;
+}
+
+/* Статистика */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  text-align: center;
+}
+
+/* Кнопки */
+.nav-button:hover:not(:disabled) {
+  background: var(--nav-button-hover);
+}
+
+.nav-button.active {
+  background: var(--nav-button-active-bg);
+  color: var(--nav-button-active-color);
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.answer-button:hover:not(:disabled) {
+  background: var(--hover-bg);
+}
+
+.answer-button.selected {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.answer-button.correct {
+  background-color: var(--correct-color);
+  color: white;
+}
+
+.answer-button.incorrect {
+  background-color: var(--incorrect-color);
+  color: white;
+}
+
+.answer-button:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+/* Результаты */
+.result-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.correct-answer {
+  color: var(--correct-color);
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.incorrect-answer {
+  color: var(--incorrect-color);
+  padding: 8px;
+  margin-top: 10px;
+}
+
+/* Статистика */
+.stat-item {
+  padding: 15px;
+  border-radius: 8px;
+  background: var(--stats-bg);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--heading-color);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--stats-text);
+}
+
+.stat-item.correct {
+  background: rgba(46, 204, 113, 0.15);
+}
+
+.stat-item.incorrect {
+  background: rgba(231, 76, 60, 0.15);
+}
+
+.stat-item.score {
+  background: rgba(52, 152, 219, 0.15);
+} 
