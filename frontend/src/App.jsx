@@ -2,6 +2,9 @@ import React, { useState, useMemo, useEffect } from 'react';
 import questionsHS from '../../test/ques_HS.json';
 import questionsBD from '../../test/ques_BD.json';
 import questionsKZ from '../../test/ques_KZ.json';
+import questionsCST from '../../test/ques_CS_T.json';
+import questionsCSM from '../../test/ques_CS_M.json';
+import questionsCSB from '../../test/ques_CS_B.json';
 import QuestionsList from './components/QuestionsList';
 import ThemeToggle from './components/ThemeToggle';
 
@@ -34,6 +37,24 @@ const App = () => {
       data: questionsKZ, 
       isStudyMode: false,
       icon: '🗣️'
+    },
+    CST: {
+      name: 'Компьютерные сети (Тест)',
+      data: questionsCST,
+      isStudyMode: false,
+      icon: '🌐'
+    },
+    CSM: {
+      name: 'Компьютерные сети (Маршрутизация)',
+      data: questionsCSM,
+      isStudyMode: false,
+      icon: '🔌'
+    },
+    CSB: {
+      name: 'Компьютерные сети (Билеты)',
+      data: questionsCSB,
+      isStudyMode: true,
+      icon: '📡'
     }
   };
 
