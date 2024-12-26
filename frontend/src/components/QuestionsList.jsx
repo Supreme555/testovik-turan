@@ -5,6 +5,7 @@ import questionsKZ from '../../../test/ques_KZ.json';
 import questionsCST from '../../../test/ques_CS_T.json';
 import questionsCSM from '../../../test/ques_CS_M.json';
 import questionsCSB from '../../../test/ques_CS_B.json';
+import questionsPS from '../../../test/ques_PS.json';
 
 const QuestionsList = ({ selectedTest = 'HS' }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -15,7 +16,8 @@ const QuestionsList = ({ selectedTest = 'HS' }) => {
     KZ: questionsKZ,
     CST: questionsCST,
     CSM: questionsCSM,
-    CSB: questionsCSB
+    CSB: questionsCSB,
+    PS: questionsPS
   };
 
   const currentTestData = availableTests[selectedTest];

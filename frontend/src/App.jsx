@@ -5,6 +5,7 @@ import questionsKZ from '../../test/ques_KZ.json';
 import questionsCST from '../../test/ques_CS_T.json';
 import questionsCSM from '../../test/ques_CS_M.json';
 import questionsCSB from '../../test/ques_CS_B.json';
+import questionsPS from '../../test/ques_PS.json';
 import QuestionsList from './components/QuestionsList';
 import ThemeToggle from './components/ThemeToggle';
 
@@ -55,6 +56,12 @@ const App = () => {
       data: questionsCSB,
       isStudyMode: true,
       icon: '📡'
+    },
+    PS: {
+      name: 'Физика',
+      data: questionsPS,
+      isStudyMode: false,
+      icon: '🔥'
     }
   };
 

@@ -1,0 +1,1316 @@
+{
+    "questions": [
+      {
+        "number": 1,
+        "question": "Тело массой (2) кг движется со скоростью (6) м/с. Какую работу необходимо совершить, чтобы увеличить скорость тела до (10) м/с?",
+        "answers": [
+          {"text": "128 Дж", "correct": false},
+          {"text": "60 Дж", "correct": false},
+          {"text": "32 Дж", "correct": false},
+          {"text": "144 Дж", "correct": false},
+          {"text": "64 Дж", "correct": true}
+        ]
+      },
+      {
+        "number": 2,
+        "question": "Снаряд массой (1) кг летит со скоростью (300) м/с и врезается в покоящийся блок массой (4) кг. После неупругого соударения они движутся вместе. Определить общую скорость.",
+        "answers": [
+          {"text": "20 м/с", "correct": false},
+          {"text": "50 м/с", "correct": false},
+          {"text": "80 м/с", "correct": false},
+          {"text": "100 м/с", "correct": false},
+          {"text": "60 м/с", "correct": true}
+        ]
+      },
+      {
+        "number": 3,
+        "question": "Камень брошен вертикально вверх со скоростью (30) м/с ((g=10 м/с²)). Через какое время он достигнет максимальной высоты?",
+        "answers": [
+          {"text": "5 с", "correct": false},
+          {"text": "2 с", "correct": false},
+          {"text": "3 с", "correct": true},
+          {"text": "10 с", "correct": false},
+          {"text": "0,5 с", "correct": false}
+        ]
+      },
+      {
+        "number": 4,
+        "question": "Автомобиль массой (1000) кг разгоняется от (0) до (20) м/с за (10) с без сопротивлений. Определить среднюю силу.",
+        "answers": [
+          {"text": "20000 Н", "correct": false},
+          {"text": "2000 Н", "correct": true},
+          {"text": "1000 Н", "correct": false},
+          {"text": "200 Н", "correct": false},
+          {"text": "500 Н", "correct": false}
+        ]
+      },
+      {
+        "number": 5,
+        "question": "Тело массой (3) кг движется с ускорением (2 м/с²) под действием силы (F) и трения (5) Н. Найти (F).",
+        "answers": [
+          {"text": "9 Н", "correct": false},
+          {"text": "0 Н", "correct": false},
+          {"text": "3 Н", "correct": false},
+          {"text": "6 Н", "correct": false},
+          {"text": "11 Н", "correct": true}
+        ]
+      },
+      {
+        "number": 6,
+        "question": "Мяч брошен под углом (30°) к горизонту со скоростью (20) м/с ((g=10 м/с²)). Найти дальность полёта.",
+        "answers": [
+          {"text": "45 м", "correct": false},
+          {"text": "35 м", "correct": true},
+          {"text": "30 м", "correct": false},
+          {"text": "20 м", "correct": false},
+          {"text": "40 м", "correct": false}
+        ]
+      },
+      {
+        "number": 7,
+        "question": "Груз массой (2) кг опускается под действием тяжести ((g=10 м/с²)). Сила натяжения нити (12) Н. Найти ускорение.",
+        "answers": [
+          {"text": "1 м/с²", "correct": false},
+          {"text": "4 м/с²", "correct": true},
+          {"text": "5 м/с²", "correct": false},
+          {"text": "3 м/с²", "correct": false},
+          {"text": "8 м/с²", "correct": false}
+        ]
+      },
+      {
+        "number": 8,
+        "question": "Материальная точка массой (1) кг движется по окружности (R=5) м со скоростью (4) м/с. Найти центростремительную силу.",
+        "answers": [
+          {"text": "0,4 Н", "correct": false},
+          {"text": "3,2 Н", "correct": true},
+          {"text": "1 Н", "correct": false},
+          {"text": "2 Н", "correct": false},
+          {"text": "0,5 Н", "correct": false}
+        ]
+      },
+      {
+        "number": 9,
+        "question": "На Луне вес тела в 6 раз меньше земного. Если на Земле вес (240) Н, то на Луне:",
+        "answers": [
+          {"text": "15 Н", "correct": false},
+          {"text": "40 Н", "correct": true},
+          {"text": "25 Н", "correct": false},
+          {"text": "0 Н", "correct": false},
+          {"text": "10 Н", "correct": false}
+        ]
+      },
+      {
+        "number": 10,
+        "question": "Шарик скатывается без трения с высоты (3,2) м ((g=10 м/с²)). Найти скорость внизу.",
+        "answers": [
+          {"text": "20 м/с", "correct": false},
+          {"text": "10 м/с", "correct": false},
+          {"text": "8 м/с", "correct": true},
+          {"text": "2,8 м/с", "correct": false},
+          {"text": "4,0 м/с", "correct": false}
+        ]
+      },
+      {
+        "number": 11,
+        "question": "Формула второй космической скорости:",
+        "answers": [
+          {"text": "√(GM/R)", "correct": false},
+          {"text": "√(2GM/R)", "correct": true},
+          {"text": "√(gR)", "correct": false},
+          {"text": "(2πR/T)", "correct": false},
+          {"text": "(GM/R²)", "correct": false}
+        ]
+      },
+      {
+        "number": 12,
+        "question": "Импульс тела:",
+        "answers": [
+          {"text": "(m/g)", "correct": false},
+          {"text": "p = ma", "correct": false},
+          {"text": "(mv^2/ )", "correct": false},
+          {"text": "p = m v", "correct": true},
+          {"text": "p = F · t", "correct": false}
+        ]
+      },
+      {
+        "number": 13,
+        "question": "Работа силы (при постоянной силе):",
+        "answers": [
+          {"text": "A = F/s", "correct": false},
+          {"text": "A = Fs^2", "correct": false},
+          {"text": "A = mg", "correct": false},
+          {"text": "A = F · s", "correct": true},
+          {"text": "(mv^2/2)", "correct": false}
+        ]
+      },
+      {
+        "number": 14,
+        "question": "Кинетическая энергия:",
+        "answers": [
+          {"text": "mv", "correct": false},
+          {"text": "(mv^2/2)", "correct": true},
+          {"text": "mgh", "correct": false},
+          {"text": "F s", "correct": false},
+          {"text": "mg", "correct": false}
+        ]
+      },
+      {
+        "number": 15,
+        "question": "Потенциальная энергия в однородном поле:",
+        "answers": [
+          {"text": "(p^2/2m)", "correct": false},
+          {"text": "mg/h", "correct": false},
+          {"text": "mgh", "correct": true},
+          {"text": "mv^2", "correct": false},
+          {"text": "mg", "correct": false}
+        ]
+      },
+      {
+        "number": 16,
+        "question": "Центростремительное ускорение:",
+        "answers": [
+          {"text": "(2πR/T)", "correct": false},
+          {"text": "(v^2/R)", "correct": true},
+          {"text": "(v/R^2)", "correct": false},
+          {"text": "(gR)", "correct": false},
+          {"text": "(F/m)", "correct": false}
+        ]
+      },
+      {
+        "number": 17,
+        "question": "Угловая скорость:",
+        "answers": [
+          {"text": "√(2gR)", "correct": false},
+          {"text": "(v/R)", "correct": true},
+          {"text": "(F/m)", "correct": false},
+          {"text": "(mg/R)", "correct": false},
+          {"text": "(R/v)", "correct": false}
+        ]
+      },
+      {
+        "number": 18,
+        "question": "Закон Гука:",
+        "answers": [
+          {"text": "(F = G m M / R^2)", "correct": false},
+          {"text": "(F=-kx)", "correct": true},
+          {"text": "(F=mv^2/R)", "correct": false},
+          {"text": "(F=qE)", "correct": false},
+          {"text": "(F=mg)", "correct": false}
+        ]
+      },
+      {
+        "number": 19,
+        "question": "Момент силы:",
+        "answers": [
+          {"text": "(M = F × l)", "correct": true},
+          {"text": "(M = F/s)", "correct": false},
+          {"text": "(M = p · v)", "correct": false},
+          {"text": "(M = m · g)", "correct": false},
+          {"text": "(M = F s^2)", "correct": false}
+        ]
+      },
+      {
+        "number": 20,
+        "question": "Первая космическая скорость:",
+        "answers": [
+          {"text": "√(gR)", "correct": false},
+          {"text": "√(GM/R)", "correct": true},
+          {"text": "√(2gR)", "correct": false},
+          {"text": "(mgR)", "correct": false},
+          {"text": "(2πR/T)", "correct": false}
+        ]
+      },
+      {
+        "number": 21,
+        "question": "Момент импульса:",
+        "answers": [
+          {"text": "(mgh)", "correct": false},
+          {"text": "(q · E)", "correct": false},
+          {"text": "(m v × r)", "correct": true},
+          {"text": "(I · ω)", "correct": false},
+          {"text": "(m v)", "correct": false}
+        ]
+      },
+      {
+        "number": 22,
+        "question": "Работа силы тяжести:",
+        "answers": [
+          {"text": "(-mgh)", "correct": false},
+          {"text": "(mv^2/2)", "correct": false},
+          {"text": "(m g (h_1 - h_2))", "correct": true},
+          {"text": "(F s^2)", "correct": false},
+          {"text": "(mgh)", "correct": false}
+        ]
+      },
+      {
+        "number": 23,
+        "question": "Ускорение свободного падения:",
+        "answers": [
+          {"text": "(G m M / R)", "correct": false},
+          {"text": "(MG/R^2)", "correct": false},
+          {"text": "(GM/R^2)", "correct": true},
+          {"text": "(GMR^2)", "correct": false},
+          {"text": "(GM/R)", "correct": false}
+        ]
+      },
+      {
+        "number": 24,
+        "question": "Момент инерции тонкого стержня относительно центра:",
+        "answers": [
+          {"text": "(1/3) m L²", "correct": false},
+          {"text": "(mR²)", "correct": false},
+          {"text": "(1/4) m L²", "correct": false},
+          {"text": "(1/2) m L²", "correct": false},
+          {"text": "(1/12) m L²", "correct": true}
+        ]
+      },
+      {
+        "number": 25,
+        "question": "Период колебаний математического маятника:",
+        "answers": [
+          {"text": "(2π √(g/l))", "correct": false},
+          {"text": "(2π/g)", "correct": false},
+          {"text": "(l/g)", "correct": false},
+          {"text": "(2π l)", "correct": false},
+          {"text": "(2π √(l/g))", "correct": true}
+        ]
+      },
+      {
+        "number": 26,
+        "question": "Первый закон Ньютона:",
+        "answers": [
+          {"text": "(ΣF = 0)", "correct": false},
+          {"text": "Сила = m·a", "correct": false},
+          {"text": "Тело изменяет свою скорость при отсутствии сил", "correct": false},
+          {"text": "Сила тяжести пропорциональна массе", "correct": false},
+          {
+            "text": "Тело сохраняет состояние покоя или равномерного прямолинейного движения при отсутствии внешних сил или равнодействующей равной нулю",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "number": 27,
+        "question": "Инерция – это:",
+        "answers": [
+          {"text": "Сила, действующая на тело", "correct": false},
+          {"text": "Количество движения", "correct": false},
+          {"text": "Наличие ускорения при силе", "correct": false},
+          {"text": "Способность тела изменять свою скорость", "correct": false},
+          {"text": "Свойство тела сопротивляться изменению скорости", "correct": true}
+        ]
+      },
+      {
+        "number": 28,
+        "question": "При равномерном движении по окружности:",
+        "answers": [
+          {"text": "Скорость не меняется", "correct": false},
+          {"text": "Ускорение = 0", "correct": false},
+          {"text": "Ускорение совпадает с направлением скорости", "correct": false},
+          {"text": "Скорость по модулю постоянна, но меняется направление", "correct": true},
+          {"text": "Скорость меняется по модулю", "correct": false}
+        ]
+      },
+      {
+        "number": 29,
+        "question": "Импульс сохраняется:",
+        "answers": [
+          {"text": "При любых взаимодействиях", "correct": false},
+          {"text": "Только при упругих соударениях", "correct": false},
+          {"text": "При отсутствии внешних сил", "correct": true},
+          {"text": "Только при неупругих", "correct": false},
+          {"text": "Только при вращении", "correct": false}
+        ]
+      },
+      {
+        "number": 30,
+        "question": "Механическая энергия сохраняется:",
+        "answers": [
+          {"text": "При неупругих соударениях", "correct": false},
+          {"text": "В нелинейных системах", "correct": false},
+          {"text": "Всегда", "correct": false},
+          {"text": "Если нет внешних сил и трения", "correct": true},
+          {"text": "Только при гравитации", "correct": false}
+        ]
+      },
+      {
+        "number": 31,
+        "question": "Центр масс системы:",
+        "answers": [
+          {"text": "Точка приложения силы тяжести", "correct": false},
+          {"text": "Геометрический центр", "correct": false},
+          {"text": "Определяется из соотношения масс и координат", "correct": true},
+          {"text": "Точка, где сосредоточена вся масса", "correct": false},
+          {"text": "Точка с макс. скоростью", "correct": false}
+        ]
+      },
+      {
+        "number": 32,
+        "question": "Момент импульса сохраняется:",
+        "answers": [
+          {"text": "При гравитации", "correct": false},
+          {"text": "Только в замкнутых системах", "correct": false},
+          {"text": "При трении", "correct": false},
+          {"text": "Если сумма внешних моментов сил=0", "correct": true},
+          {"text": "Всегда", "correct": false}
+        ]
+      },
+      {
+        "number": 33,
+        "question": "Связь углового и линейного ускорения:",
+        "answers": [
+          {"text": "Нет связи", "correct": false},
+          {"text": "a = (α / R)", "correct": false},
+          {"text": "a = (α^2 R)", "correct": false},
+          {"text": "a = (α R)", "correct": true},
+          {"text": "a = (R / α)", "correct": false}
+        ]
+      },
+      {
+        "number": 34,
+        "question": "Закон всемирного тяготения открыл:",
+        "answers": [
+          {"text": "Эйнштейн", "correct": false},
+          {"text": "Галилей", "correct": false},
+          {"text": "Коперник", "correct": false},
+          {"text": "Кеплер", "correct": false},
+          {"text": "Ньютон", "correct": true}
+        ]
+      },
+      {
+        "number": 35,
+        "question": "Скалярная величина:",
+        "answers": [
+          {"text": "Скорость", "correct": false},
+          {"text": "Ускорение", "correct": false},
+          {"text": "Импульс", "correct": false},
+          {"text": "Сила", "correct": false},
+          {"text": "Мощность", "correct": true}
+        ]
+      },
+      {
+        "number": 36,
+        "question": "Два заряда (q1=2×10⁻⁶ Кл) и (q2=12×10⁻⁶ Кл) на расстоянии (0.2 м). Сила?",
+        "answers": [
+          {"text": "1.8 Н", "correct": false},
+          {"text": "0.36 Н", "correct": false},
+          {"text": "9 Н", "correct": false},
+          {"text": "0.9 Н", "correct": false},
+          {"text": "5.4 Н", "correct": true}
+        ]
+      },
+      {
+        "number": 37,
+        "question": "Ток (6 А) течёт (2 с). Определить заряд.",
+        "answers": [
+          {"text": "1 Кл", "correct": false},
+          {"text": "0.4 Кл", "correct": false},
+          {"text": "2.5 Кл", "correct": false},
+          {"text": "0.1 Кл", "correct": false},
+          {"text": "12 Кл", "correct": true}
+        ]
+      },
+      {
+        "number": 38,
+        "question": "Сопротивление (10 Ω), напряжение (30 В). Сила тока?",
+        "answers": [
+          {"text": "20 А", "correct": false},
+          {"text": "200 А", "correct": false},
+          {"text": "0.5 А", "correct": false},
+          {"text": "3 А", "correct": true},
+          {"text": "10 А", "correct": false}
+        ]
+      },
+      {
+        "number": 39,
+        "question": "Конденсатор ёмкостью (10 мкФ), напряжение (U=200 В). Заряд конденсатора?",
+        "answers": [
+          {"text": "10⁻⁵ Кл", "correct": false},
+          {"text": "1 Кл", "correct": false},
+          {"text": "2×10⁻³ Кл", "correct": true},
+          {"text": "10⁻⁴ Кл", "correct": false},
+          {"text": "10⁻² Кл", "correct": false}
+        ]
+      },
+      {
+        "number": 40,
+        "question": "В резисторе (I=3 А), (U=10 В). Мощность?",
+        "answers": [
+          {"text": "2 Вт", "correct": false},
+          {"text": "0.2 Вт", "correct": false},
+          {"text": "5 Вт", "correct": false},
+          {"text": "30 Вт", "correct": true},
+          {"text": "10 Вт", "correct": false}
+        ]
+      },
+      {
+        "number": 41,
+        "question": "Два резистора по (8 Ω) параллельно, (U=20 В). Общий ток?",
+        "answers": [
+          {"text": "1 А", "correct": false},
+          {"text": "2 А", "correct": false},
+          {"text": "5 А", "correct": true},
+          {"text": "0.5 А", "correct": false},
+          {"text": "10 А", "correct": false}
+        ]
+      },
+      {
+        "number": 42,
+        "question": "Магнитный поток изменяется на (0.04 Вб) за (0.01 с). ЭДС индукции?",
+        "answers": [
+          {"text": "20 В", "correct": false},
+          {"text": "0.02 В", "correct": false},
+          {"text": "200 В", "correct": false},
+          {"text": "4 В", "correct": true},
+          {"text": "0.2 В", "correct": false}
+        ]
+      },
+      {
+        "number": 43,
+        "question": "Катушка индуктивности (L=0.5 Гн), сила тока (I=2 А). Энергия магнитного поля?",
+        "answers": [
+          {"text": "2 Дж", "correct": false},
+          {"text": "1 Дж", "correct": true},
+          {"text": "0.5 Дж", "correct": false},
+          {"text": "0.4 Дж", "correct": false},
+          {"text": "8 Дж", "correct": false}
+        ]
+      },
+      {
+        "number": 44,
+        "question": "Проводник длиной (0.5 м) с током (I=5 А) в поле (B=0.2 Тл) перпендикулярно B. Сила со стороны поля?",
+        "answers": [
+          {"text": "0.1 Н", "correct": false},
+          {"text": "10 Н", "correct": false},
+          {"text": "2 Н", "correct": false},
+          {"text": "0.05 Н", "correct": false},
+          {"text": "0.5 Н", "correct": true}
+        ]
+      },
+      {
+        "number": 45,
+        "question": "Электрон ((q=1.6×10⁻¹⁹ Кл), (v=2×10⁶ м/с)) в поле (B=10⁻³ Тл). Сила Лоренца?",
+        "answers": [
+          {"text": "1.6×10⁻¹⁴ Н", "correct": false},
+          {"text": "3.2×10⁻¹⁶ Н", "correct": true},
+          {"text": "3.2×10⁻¹⁴ Н", "correct": false},
+          {"text": "1.6×10⁻¹⁶ Н", "correct": false},
+          {"text": "3.2×10⁻¹⁹ Н", "correct": false}
+        ]
+      },
+      {
+        "number": 46,
+        "question": "Напряжённость поля точечного заряда:",
+        "answers": [
+          {"text": "(U/d)", "correct": false},
+          {"text": "(F/q^2)", "correct": false},
+          {"text": "E = (k·q / r^2)", "correct": true},
+          {"text": "(I·R)", "correct": false},
+          {"text": "(q·U)", "correct": false}
+        ]
+      },
+      {
+        "number": 47,
+        "question": "Ёмкость плоского конденсатора:",
+        "answers": [
+          {"text": "(ε₀·d/S)", "correct": false},
+          {"text": "(μ₀·(l/S))", "correct": false},
+          {"text": "(Q/U)", "correct": false},
+          {"text": "(ε₀·S/d)", "correct": true},
+          {"text": "(k·q / r^2)", "correct": false}
+        ]
+      },
+      {
+        "number": 48,
+        "question": "Закон Ома для участка цепи:",
+        "answers": [
+          {"text": "(I=U R)", "correct": false},
+          {"text": "(P=I U)", "correct": false},
+          {"text": "(U = I R^2)", "correct": false},
+          {"text": "(U/R)", "correct": true}, 
+          {"text": "(R=I·U)", "correct": false}
+        ]
+      },
+      {
+        "number": 49,
+        "question": "Энергия заряженного конденсатора:",
+        "answers": [
+          {"text": "(Q² / (4·C))", "correct": false},
+          {"text": "(C·U²/2)", "correct": true},
+          {"text": "(C·U)", "correct": false},
+          {"text": "(U² / C)", "correct": false},
+          {"text": "(C²·U)", "correct": false}
+        ]
+      },
+      {
+        "number": 50,
+        "question": "Закон Джоуля-Ленца:",
+        "answers": [
+          {"text": "(U·R·t)", "correct": false},
+          {"text": "(I·t / R)", "correct": false},
+          {"text": "(I²·R·t)", "correct": true},
+          {"text": "(U·t / R)", "correct": false},
+          {"text": "(I·R²·t)", "correct": false}
+        ]
+      },
+      {
+        "number": 51,
+        "question": "Сила Ампера:",
+        "answers": [
+          {"text": "(μ₀·I / 2πr)", "correct": false},
+          {"text": "(q·v·B)", "correct": false},
+          {"text": "(I·ℓ × B)", "correct": true},
+          {"text": "(U / ℓ)", "correct": false},
+          {"text": "(I·L / B)", "correct": false}
+        ]
+      },
+      {
+        "number": 52,
+        "question": "ЭДС индукции (Фарадей):",
+        "answers": [
+          {"text": "(Q / t)", "correct": false},
+          {"text": "(I·R)", "correct": false},
+          {"text": "(μ₀·I)", "correct": false},
+          {"text": "(- ΔΦ / Δt)", "correct": true},
+          {"text": "(B·L·v)", "correct": false}
+        ]
+      },
+      {
+        "number": 53,
+        "question": "Магнитный поток:",
+        "answers": [
+          {"text": "(Φ = B·S·cosα)", "correct": true},
+          {"text": "(B / S)", "correct": false},
+          {"text": "(I·R)", "correct": false},
+          {"text": "(Q / t)", "correct": false},
+          {"text": "(U / R)", "correct": false}
+        ]
+      },
+      {
+        "number": 54,
+        "question": "ЭДС самоиндукция:",
+        "answers": [
+          {"text": "(I·R)", "correct": false},
+          {"text": "(L·I)", "correct": false},
+          {"text": "(- L·(ΔI / Δt))", "correct": true},
+          {"text": "(L·I² / 2)", "correct": false},
+          {"text": "(Q·L)", "correct": false}
+        ]
+      },
+      {
+        "number": 55,
+        "question": "Сила Лоренца:",
+        "answers": [
+          {"text": "(q·E)", "correct": false},
+          {"text": "(m v² / r)", "correct": false},
+          {"text": "(q(E + v B sinα))", "correct": true},
+          {"text": "(I ℓ B)", "correct": false},
+          {"text": "(qvB)", "correct": false}
+        ]
+      },
+      {
+        "number": 56,
+        "question": "Закон Кулона:",
+        "answers": [
+          {"text": "(q·E)", "correct": false},
+          {"text": "(k·q / r)", "correct": false},
+          {"text": "(U·q)", "correct": false},
+          {"text": "(I² R)", "correct": false},
+          {"text": "(k·(q1·q2) / r²)", "correct": true}
+        ]
+      },
+      {
+        "number": 57,
+        "question": "Мощность электрического тока:",
+        "answers": [
+          {"text": "Нет верного", "correct": false},
+          {"text": "(I² R)", "correct": false},
+          {"text": "(U² / R)", "correct": false},
+          {"text": "(I·U)", "correct": false},
+          {"text": "Все три верны", "correct": true}
+        ]
+      },
+      {
+        "number": 58,
+        "question": "Связь заряда и ёмкости:",
+        "answers": [
+          {"text": "(C / U)", "correct": false},
+          {"text": "(Q = U·R)", "correct": false},
+          {"text": "(Q = C·U)", "correct": true},
+          {"text": "(Q = I² R)", "correct": false},
+          {"text": "(U / C)", "correct": false}
+        ]
+      },
+      {
+        "number": 59,
+        "question": "Скорость дрейфа электронов:",
+        "answers": [
+          {"text": "(n·q·S / I)", "correct": false},
+          {"text": "(I·R)", "correct": false},
+          {"text": "(U / R)", "correct": false},
+          {"text": "(I / (n·q·S))", "correct": true},
+          {"text": "(v = (n·q·S)/I)", "correct": false}
+        ]
+      },
+      {
+        "number": 60,
+        "question": "Первый закон Кирхгофа:",
+        "answers": [
+          {"text": "(ΣU=0)", "correct": false},
+          {"text": "(ΣR=0)", "correct": false},
+          {"text": "(ΣQ=0)", "correct": false},
+          {"text": "(ΣI=0)", "correct": true},
+          {"text": "(ΣF=0)", "correct": false}
+        ]
+      },
+      {
+        "number": 61,
+        "question": "Напряжённость электрического поля E — это:",
+        "answers": [
+          {"text": "(сила / заряд)", "correct": true},
+          {"text": "(заряд / площадь)", "correct": false},
+          {"text": "Потенциальная энергия", "correct": false},
+          {"text": "Сила/площадь", "correct": false},
+          {"text": "Сила на заряд", "correct": false}
+        ]
+      },
+      {
+        "number": 62,
+        "question": "Вектор D и E:",
+        "answers": [
+          {"text": "(E / ε₀)", "correct": false},
+          {"text": "(ε₀ E)", "correct": false},
+          {"text": "(ε₀²·E)", "correct": false},
+          {"text": "D = (ε₀·ε·E)", "correct": true},
+          {"text": "Не связаны", "correct": false}
+        ]
+      },
+      {
+        "number": 63,
+        "question": "Сопротивление зависит от:",
+        "answers": [
+          {"text": "Только от напряжения", "correct": false},
+          {"text": "Всегда ноль", "correct": false},
+          {"text": "Только от тока", "correct": false},
+          {"text": "От заряда", "correct": false},
+          {"text": "От длины, площади и удельного сопротивления", "correct": true}
+        ]
+      },
+      {
+        "number": 64,
+        "question": "Работа тока за время t:",
+        "answers": [
+          {"text": "Нет верного", "correct": false},
+          {"text": "(I²·R·t)", "correct": false},
+          {"text": "(Q·U)", "correct": false},
+          {"text": "(I·U·t)", "correct": false},
+          {"text": "Все эквивалентны", "correct": true}
+        ]
+      },
+      {
+        "number": 65,
+        "question": "Закон Ампера:",
+        "answers": [
+          {"text": "Сила на проводник с током в поле B", "correct": true},
+          {"text": "Сила на движущийся заряд в поле B", "correct": false},
+          {"text": "Сила взаимодействия зарядов", "correct": false},
+          {"text": "Закон индукции", "correct": false},
+          {"text": "Замкнутость цепи", "correct": false}
+        ]
+      },
+      {
+        "number": 66,
+        "question": "Магнитное поле создаётся:",
+        "answers": [
+          {"text": "Только магнитами", "correct": false},
+          {"text": "Не существует", "correct": false},
+          {"text": "Только неподвижными зарядами", "correct": false},
+          {"text": "Любым E-полем", "correct": false},
+          {"text": "Движущимися зарядами или токами", "correct": true}
+        ]
+      },
+      {
+        "number": 67,
+        "question": "Вихревое электрическое поле E возникает при:",
+        "answers": [
+          {"text": "Отсутствии магнитных явлений", "correct": false},
+          {"text": "Постоянном E-поле", "correct": false},
+          {"text": "Постоянных зарядах", "correct": false},
+          {"text": "Равномерном движении зарядов", "correct": false},
+          {"text": "Изменении B-поля", "correct": true}
+        ]
+      },
+      {
+        "number": 68,
+        "question": "Электромагнитная волна:",
+        "answers": [
+          {"text": "Волна упругих деформаций", "correct": false},
+          {"text": "Статическое поле", "correct": false},
+          {"text": "Гравитационная волна", "correct": false},
+          {"text": "Изменения плотности материи", "correct": false},
+          {"text": "Переменные E и B поля", "correct": true}
+        ]
+      },
+      {
+        "number": 69,
+        "question": "Максвелл объединил:",
+        "answers": [
+          {"text": "Теплоту и работу", "correct": false},
+          {"text": "Гравитацию и электростатику", "correct": false},
+          {"text": "Ядерные силы и электростатику", "correct": false},
+          {"text": "Оптику и механику", "correct": false},
+          {"text": "Электричество и магнетизм", "correct": true}
+        ]
+      },
+      {
+        "number": 70,
+        "question": "Единица Тесла (Тл) в СИ:",
+        "answers": [
+          {"text": "(Н / (A·м))", "correct": true},
+          {"text": "(Н / Кл)", "correct": false},
+          {"text": "(Н / м²)", "correct": false},
+          {"text": "(В / м)", "correct": false},
+          {"text": "(Дж / Кл)", "correct": false}
+        ]
+      },
+      {
+        "number": 71,
+        "question": "Вакуумная проницаемость μ₀:",
+        "answers": [
+          {"text": "9×10⁹ Н·м²/Кл²", "correct": false},
+          {"text": "Пост. из закона Био—Савара", "correct": false},
+          {"text": "Не важна", "correct": false},
+          {"text": "4π×10⁻⁷ Гн/м", "correct": true},
+          {"text": "8.85×10⁻¹² Ф/м", "correct": false}
+        ]
+      },
+      {
+        "number": 72,
+        "question": "Поляризация диэлектрика:",
+        "answers": [
+          {"text": "Уменьшение ε", "correct": false},
+          {"text": "Ориентация диполей вдоль поля", "correct": true},
+          {"text": "Превращение в проводник", "correct": false},
+          {"text": "При очень высоких частотах", "correct": false},
+          {"text": "Смещение ионных решёток", "correct": false}
+        ]
+      },
+      {
+        "number": 73,
+        "question": "Скорость ЭМ волн в вакууме:",
+        "answers": [
+          {"text": "~ 3×10⁸ м/с", "correct": true},
+          {"text": "скорость звука", "correct": false},
+          {"text": "бесконечность", "correct": false},
+          {"text": "0", "correct": false},
+          {"text": "зависит от частоты", "correct": false}
+        ]
+      },
+      {
+        "number": 74,
+        "question": "Второе уравнение Максвелла (∇·B = 0):",
+        "answers": [
+          {"text": "Циркуляция B-поля", "correct": false},
+          {"text": "Связь E с плотностью зарядов", "correct": false},
+          {"text": "Вихревое E-поле", "correct": false},
+          {"text": "Токи смещения", "correct": false},
+          {"text": "Отсутствие магнитных зарядов", "correct": true}
+        ]
+      },
+      {
+        "number": 75,
+        "question": "Первое уравнение Максвелла:",
+        "answers": [
+          {"text": "Циркуляция B-поля", "correct": false},
+          {"text": "Токи смещения", "correct": false},
+          {"text": "Связь E с плотностью зарядов", "correct": true},
+          {"text": "Отсутствие магнитных зарядов", "correct": false},
+          {"text": "Вихревое E-поле", "correct": false}
+        ]
+      },
+      {
+        "number": 76,
+        "question": "Маятник длиной (1 м) ((g=9.8 м/с²)). Период T ≈ ?",
+        "answers": [
+          {"text": "3.14 с", "correct": false},
+          {"text": "1 с", "correct": false},
+          {"text": "~ 2 с", "correct": true},
+          {"text": "0.5 с", "correct": false},
+          {"text": "~ 3 с", "correct": false}
+        ]
+      },
+      {
+        "number": 77,
+        "question": "Колебательный контур: (L=0.1 Гн), (C=10 мкФ). T ≈ ?",
+        "answers": [
+          {"text": "0.2 с", "correct": false},
+          {"text": "0.02 с", "correct": false},
+          {"text": "6.28×10⁻³ с", "correct": true},
+          {"text": "2×10⁻³ с", "correct": false},
+          {"text": "2×10⁻⁴ с", "correct": false}
+        ]
+      },
+      {
+        "number": 78,
+        "question": "Тело колеблется с (A=0.2 м), (f=5 Гц). Максимальная скорость v_max = ?",
+        "answers": [
+          {"text": "~ 0.314 м/с", "correct": false},
+          {"text": "~ 6.28 м/с", "correct": true},
+          {"text": "~ 0.5 м/с", "correct": false},
+          {"text": "~ 1 м/с", "correct": false},
+          {"text": "~ 0.1 м/с", "correct": false}
+        ]
+      },
+      {
+        "number": 79,
+        "question": "Период колебаний пружинного маятника:",
+        "answers": [
+          {"text": "(2π √(m/k))", "correct": true},
+          {"text": "(2π(R/L))", "correct": false},
+          {"text": "(2π√(L·C))", "correct": false},
+          {"text": "(1/f)", "correct": false},
+          {"text": "(2π√(l/g))", "correct": false}
+        ]
+      },
+      {
+        "number": 80,
+        "question": "Связь длины волны, частоты и скорости:",
+        "answers": [
+          {"text": "(λ = v/t)", "correct": false},
+          {"text": "(v = λ/f)", "correct": false},
+          {"text": "(λ = v²·f)", "correct": false},
+          {"text": "(v = λ·f)", "correct": true},
+          {"text": "(v = f/λ)", "correct": false}
+        ]
+      },
+      {
+        "number": 81,
+        "question": "Энергия гармонического осциллятора:",
+        "answers": [
+          {"text": "(1/2) k A²", "correct": true},
+          {"text": "(mgh)", "correct": false},
+          {"text": "(mv²)", "correct": false},
+          {"text": "Q²/(2C)", "correct": false},
+          {"text": "(I ω²)", "correct": false}
+        ]
+      },
+      {
+        "number": 82,
+        "question": "Период колебаний математического маятника:",
+        "answers": [
+          {"text": "(2π √(m/k))", "correct": false},
+          {"text": "(2π(R/L))", "correct": false},
+          {"text": "(2π√(L·C))", "correct": false},
+          {"text": "(1/f)", "correct": false},
+          {"text": "(2π √(l/g))", "correct": true}
+        ]
+      },
+      {
+        "number": 83,
+        "question": "Закон гармонических колебаний координаты:",
+        "answers": [
+          {"text": "x(t)=A cos(ωt+φ)", "correct": true},
+          {"text": "x(t)=A/ω", "correct": false},
+          {"text": "x(t)=A ω t", "correct": false},
+          {"text": "x(t)=A e^(ωt)", "correct": false},
+          {"text": "x(t)=A t²", "correct": false}
+        ]
+      },
+      {
+        "number": 84,
+        "question": "Механическая волна:",
+        "answers": [
+          {"text": "Постоянное смещение среды", "correct": false},
+          {"text": "Перенос заряда", "correct": false},
+          {"text": "Изменение массы", "correct": false},
+          {"text": "Распространение колебаний в упругой среде", "correct": true}
+        ]
+      },
+      {
+        "number": 85,
+        "question": "Фаза колебаний:",
+        "answers": [
+          {"text": "Частота", "correct": false},
+          {"text": "Энергия", "correct": false},
+          {"text": "Длина волны", "correct": false},
+          {"text": "Положение и состояние в данный момент", "correct": true},
+          {"text": "Амплитуда", "correct": false}
+        ]
+      },
+      {
+        "number": 86,
+        "question": "Идеальный газ изобарно расширяется с (V₁=2 м³) до (V₂=5 м³) при (P=100 кПа). Какую работу совершил газ?",
+        "answers": [
+          {"text": "0", "correct": false},
+          {"text": "100 кДж", "correct": false},
+          {"text": "400 кДж", "correct": false},
+          {"text": "300 кДж", "correct": true},
+          {"text": "50 кДж", "correct": false}
+        ]
+      },
+      {
+        "number": 87,
+        "question": "(n=2) моль идеального одноатомного газа, при (T=300 K). Чему равна средняя кинетическая энергия одной молекулы ((k = 1.38×10⁻²³ Дж/К))?",
+        "answers": [
+          {"text": "9×10⁻²¹ Дж", "correct": false},
+          {"text": "4.14×10⁻²¹ Дж", "correct": false},
+          {"text": "1.38×10⁻²³ Дж", "correct": false},
+          {"text": "2×10⁻²³ Дж", "correct": false},
+          {"text": "6.2×10⁻²¹ Дж", "correct": true}
+        ]
+      },
+      {
+        "number": 88,
+        "question": "Идеальный газ изохорно нагревают: ((T₁=200 K) до (T₂=600 K)), начальное давление (P=100 кПа). Каково новое давление (P₂)?",
+        "answers": [
+          {"text": "50 кПа", "correct": false},
+          {"text": "150 кПа", "correct": false},
+          {"text": "400 кПа", "correct": false},
+          {"text": "300 кПа", "correct": true},
+          {"text": "100 кПа", "correct": false}
+        ]
+      },
+      {
+        "number": 89,
+        "question": "Уравнение Менделеева-Клапейрона:",
+        "answers": [
+          {"text": "P V = const", "correct": false},
+          {"text": "(P / (ρ T)) = const", "correct": false},
+          {"text": "P V = n R T", "correct": true},
+          {"text": "(V / T) = const", "correct": false},
+          {"text": "(P / T) = const", "correct": false}
+        ]
+      },
+      {
+        "number": 90,
+        "question": "Основное уравнение МКТ:",
+        "answers": [
+          {"text": "P = ρ g h", "correct": false},
+          {"text": "P = (1/3) n m ⟨v²⟩", "correct": true},
+          {"text": "P = const", "correct": false},
+          {"text": "P = n k_B T", "correct": false},
+          {"text": "(F / s)", "correct": false}
+        ]
+      },
+      {
+        "number": 91,
+        "question": "Внутренняя энергия идеального одноатомного газа:",
+        "answers": [
+          {"text": "Q", "correct": false},
+          {"text": "(3/2) n R T", "correct": true},
+          {"text": "m g h", "correct": false},
+          {"text": "I² R t", "correct": false},
+          {"text": "P V²", "correct": false}
+        ]
+      },
+      {
+        "number": 92,
+        "question": "Первый закон термодинамики:",
+        "answers": [
+          {"text": "ΔU = 0", "correct": false},
+          {"text": "ΔU = Q - A", "correct": true},
+          {"text": "Q = A - ΔU", "correct": false},
+          {"text": "ΔU = A - Q", "correct": false},
+          {"text": "A = Q - ΔU", "correct": false}
+        ]
+      },
+      {
+        "number": 93,
+        "question": "Энтропия это:",
+        "answers": [
+          {"text": "Число частиц", "correct": false},
+          {"text": "Мера неупорядоченности", "correct": true},
+          {"text": "Скорость реакции", "correct": false},
+          {"text": "Заряд", "correct": false},
+          {"text": "Полная энергия", "correct": false}
+        ]
+      },
+      {
+        "number": 94,
+        "question": "Средняя кинетическая энергия молекулы зависит:",
+        "answers": [
+          {"text": "От числа молекул", "correct": false},
+          {"text": "Только от температуры", "correct": true},
+          {"text": "От объёма", "correct": false},
+          {"text": "От давления", "correct": false},
+          {"text": "От массы газа", "correct": false}
+        ]
+      },
+      {
+        "number": 95,
+        "question": "Средняя квадратичная скорость:",
+        "answers": [
+          {"text": "√(2 g h)", "correct": false},
+          {"text": "(R T / P)", "correct": false},
+          {"text": "√(3 R T / M)", "correct": true},
+          {"text": "(U / (n R))", "correct": false},
+          {"text": "(k_B T / m)", "correct": false}
+        ]
+      },
+      {
+        "number": 96,
+        "question": "Давление через концентрацию и среднюю кинетическую энергию:",
+        "answers": [
+          {"text": "P = n m v", "correct": false},
+          {"text": "P = (2/3) n ⟨E_kin⟩", "correct": true},
+          {"text": "P = (n k_B / T)", "correct": false},
+          {"text": "P = n R T", "correct": false},
+          {"text": "(F / S)", "correct": false}
+        ]
+      },
+      {
+        "number": 97,
+        "question": "Коэффициент теплопроводности (порядок формулы):",
+        "answers": [
+          {"text": "κ = n R T", "correct": false},
+          {"text": "κ ≈ (1/3) n v̄ λ c_V m₀", "correct": true},
+          {"text": "κ = P V", "correct": false},
+          {"text": "κ = ρ g h", "correct": false},
+          {"text": "κ = (Q / (t ΔT))", "correct": false}
+        ]
+      },
+      {
+        "number": 98,
+        "question": "Работа в изобарном процессе:",
+        "answers": [
+          {"text": "A = (n k_B / T)", "correct": false},
+          {"text": "A = ΔU + Q", "correct": false},
+          {"text": "A = P ΔV", "correct": true},
+          {"text": "A = P V", "correct": false},
+          {"text": "A = n R ΔT", "correct": false}
+        ]
+      },
+      {
+        "number": 99,
+        "question": "Внутренняя энергия одноатомного идеального газа:",
+        "answers": [
+          {"text": "U = n R T", "correct": false},
+          {"text": "U=m g h", "correct": false},
+          {"text": "(1/2) n R T", "correct": false},
+          {"text": "(k_B T / m)", "correct": false},
+          {"text": "(3/2) n R T", "correct": true}
+        ]
+      },
+      {
+        "number": 100,
+        "question": "Связь (P, n, T):",
+        "answers": [
+          {"text": "(P = (n R / T))", "correct": false},
+          {"text": "(P = (U / V))", "correct": false},
+          {"text": "(ρ g h)", "correct": false},
+          {"text": "P = n k_B T", "correct": true},
+          {"text": "(n / T)", "correct": false}
+        ]
+      },
+      {
+        "number": 101,
+        "question": "Изотермический процесс (Бойль-Мариотт):",
+        "answers": [
+          {"text": "P V = const", "correct": true},
+          {"text": "(V / T) = const", "correct": false},
+          {"text": "P = const", "correct": false},
+          {"text": "(P / T) = const", "correct": false},
+          {"text": "V = const", "correct": false}
+        ]
+      },
+      {
+        "number": 102,
+        "question": "Энергия электрона, ускоренного разностью потенциалов (100 В).",
+        "answers": [
+          {"text": "200 эВ", "correct": false},
+          {"text": "1 эВ", "correct": false},
+          {"text": "10 эВ", "correct": false},
+          {"text": "100 эВ", "correct": true},
+          {"text": "50 эВ", "correct": false}
+        ]
+      },
+      {
+        "number": 103,
+        "question": "Полная энергия частицы, движущейся со скоростью (v=0.8c) (γ ≈ 1.67), если покойная энергия (m₀c²=511 кэВ)",
+        "answers": [
+          {"text": "100 кэВ", "correct": false},
+          {"text": "~ 300 кэВ", "correct": false},
+          {"text": "511 кэВ", "correct": false},
+          {"text": "2000 кэВ", "correct": false},
+          {"text": "~ 850 кэВ", "correct": true}
+        ]
+      },
+      {
+        "number": 104,
+        "question": "Энергия фотона длиной волны (λ=500 нм)",
+        "answers": [
+          {"text": "10 эВ", "correct": false},
+          {"text": "0.5 эВ", "correct": false},
+          {"text": "0.1 эВ", "correct": false},
+          {"text": "1 эВ", "correct": false},
+          {"text": "2.5 эВ", "correct": true}
+        ]
+      },
+      {
+        "number": 105,
+        "question": "Лоренц-фактор:",
+        "answers": [
+          {"text": "√(1 - (v²/c²))", "correct": false},
+          {"text": "1 - (v²/c²)", "correct": false},
+          {"text": "(v/c)", "correct": false},
+          {"text": "(1 - v/c)²", "correct": false},
+          {"text": "1 / √(1 - (v²/c²))", "correct": true}
+        ]
+      },
+      {
+        "number": 106,
+        "question": "Длина волны де Бройля:",
+        "answers": [
+          {"text": "√(2 m E)", "correct": false},
+          {"text": "(h / m)", "correct": false},
+          {"text": "(c / f)", "correct": false},
+          {"text": "(v / f)", "correct": false},
+          {"text": "(h / p)", "correct": true}
+        ]
+      },
+      {
+        "number": 107,
+        "question": "Энергия фотона:",
+        "answers": [
+          {"text": "(m c²)", "correct": false},
+          {"text": "(U q)", "correct": false},
+          {"text": "(h f)", "correct": true},
+          {"text": "(m v² / 2)", "correct": false},
+          {"text": "(k T)", "correct": false}
+        ]
+      },
+      {
+        "number": 108,
+        "question": "Принцип неопределённости:",
+        "answers": [
+          {"text": "(Δx Δp ≤ 0)", "correct": false},
+          {"text": "(Δx Δp ≤ ħ/2)", "correct": false},
+          {"text": "(Δx Δp = ħ)", "correct": false},
+          {"text": "(Δx Δp = 0)", "correct": false},
+          {"text": "(Δx Δp ≥ ħ/2)", "correct": true}
+        ]
+      },
+      {
+        "number": 109,
+        "question": "Релятивистская полная энергия:",
+        "answers": [
+          {"text": "(p² / 2m)", "correct": false},
+          {"text": "(h f)", "correct": false},
+          {"text": "(m g h)", "correct": false},
+          {"text": "(γ m₀ c²)", "correct": true},
+          {"text": "(m c²)", "correct": false}
+        ]
+      },
+      {
+        "number": 110,
+        "question": "Импульс фотона:",
+        "answers": [
+          {"text": "(m v)", "correct": false},
+          {"text": "(h f)", "correct": false},
+          {"text": "(q B ℓ)", "correct": false},
+          {"text": "(h / λ)", "correct": true},
+          {"text": "√(2 m E)", "correct": false}
+        ]
+      },
+      {
+        "number": 111,
+        "question": "Основная идея СТО:",
+        "answers": [
+          {"text": "Законы ЭД неверны", "correct": false},
+          {"text": "Масса не меняется", "correct": false},
+          {"text": "Время абсолютно", "correct": false},
+          {"text": "Пространство абсолютно", "correct": false},
+          {"text": "Скорость света постоянна во всех ИСО", "correct": true}
+        ]
+      },
+      {
+        "number": 112,
+        "question": "Масса покоя электрона:",
+        "answers": [
+          {"text": "Непостоянна", "correct": false},
+          {"text": "Бесконечна", "correct": false},
+          {"text": "Зависит от скорости", "correct": false},
+          {"text": "Равна нулю", "correct": false},
+          {"text": "Не равна нулю", "correct": true}
+        ]
+      },
+      {
+        "number": 113,
+        "question": "Фотон:",
+        "answers": [
+          {"text": "Не релятивистская частица", "correct": false},
+          {"text": "Нет импульса", "correct": false},
+          {"text": "Масса покоя=0, но есть импульс", "correct": true},
+          {"text": "Заряжен", "correct": false},
+          {"text": "Масса покоя не 0", "correct": false}
+        ]
+      },
+      {
+        "number": 114,
+        "question": "Квантование момента импульса:",
+        "answers": [
+          {"text": "Любое значение", "correct": false},
+          {"text": "L=hf", "correct": false},
+          {"text": "L=mv", "correct": false},
+          {"text": "L=0", "correct": false},
+          {"text": "L=n ħ", "correct": true}
+        ]
+      },
+      {
+        "number": 115,
+        "question": "Принцип неопределённости:",
+        "answers": [
+          {"text": "Можно всегда точно знать x", "correct": false},
+          {"text": "Нет ограничений", "correct": false},
+          {"text": "Ускорение постоянно", "correct": false},
+          {"text": "Нельзя точно знать одновременно x и p", "correct": true},
+          {"text": "c можно превысить", "correct": false}
+        ]
+      },
+      {
+        "number": 116,
+        "question": "Теория относительности:",
+        "answers": [
+          {"text": "Масса растёт с v", "correct": true},
+          {"text": "Масса падает с v", "correct": false},
+          {"text": "Масса const", "correct": false},
+          {"text": "Изменение заряда", "correct": false},
+          {"text": "Изменение ħ", "correct": false}
+        ]
+      },
+      {
+        "number": 117,
+        "question": "Атомная энергетика основана на:",
+        "answers": [
+          {"text": "Электростатика", "correct": false},
+          {"text": "Энергии ветра", "correct": false},
+          {"text": "Расщеплении тяжёлых и слиянии лёгких ядер", "correct": true},
+          {"text": "Механических колебаниях", "correct": false},
+          {"text": "Сжигании угля", "correct": false}
+        ]
+      },
+      {
+        "number": 118,
+        "question": "Фотоэффект:",
+        "answers": [
+          {"text": "Классическая ЭД", "correct": false},
+          {"text": "Волновая", "correct": false},
+          {"text": "Квантовая природа света", "correct": true},
+          {"text": "Гравитация", "correct": false},
+          {"text": "Тепловое движение", "correct": false}
+        ]
+      },
+      {
+        "number": 119,
+        "question": "Ядерные силы:",
+        "answers": [
+          {"text": "Нет их", "correct": false},
+          {"text": "На больших расстояниях", "correct": false},
+          {"text": "Слабы как гравитация", "correct": false},
+          {"text": "Электрические", "correct": false},
+          {"text": "Действуют на ~10⁻¹⁵ м", "correct": true}
+        ]
+      }
+    ]
+  }
+  
