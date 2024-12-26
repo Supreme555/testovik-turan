@@ -8,6 +8,7 @@ import questionsCSB from '../../test/ques_CS_B.json';
 import questionsPS from '../../test/ques_PS.json';
 import QuestionsList from './components/QuestionsList';
 import ThemeToggle from './components/ThemeToggle';
+import questionsPS_A from '../../test/ques_PS_A.json';
 
 const App = () => {
   const [selectedTest, setSelectedTest] = useState(null);
@@ -61,6 +62,12 @@ const App = () => {
       name: 'Физика',
       data: questionsPS,
       isStudyMode: false,
+      icon: '🔥'
+    },
+    PS_A: {
+      name: 'Физика-ответы',
+      data: questionsPS_A,
+      isStudyMode: true,
       icon: '🔥'
     }
   };
